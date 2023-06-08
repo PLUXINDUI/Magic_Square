@@ -31,16 +31,10 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        //setContentView(R.layout.content_main);
     }
 
     public void startNewActivity(View v) {
         Intent intent = new Intent(this, GameSelection.class);
         startActivity(intent);
     }
-//    public void btnRules(View v) {
-//        Intent intent = new Intent(this, rules.class);
-//        startActivity(intent);
-//    }
 }

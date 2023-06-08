@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-public class Game3x3 extends AppCompatActivity{
+public class Game3x3 extends AppCompatActivity {
     private TextView NUM1, NUM2, NUM3, NUM4, NUM5, NUM6, NUM7, NUM8, NUM9, RIGHTWRONG;
     private EditText writeNum1, writeNum2, writeNum3, writeNum4, writeNum5, writeNum6, writeNum7, writeNum8, writeNum9;
     private TextView text;
@@ -41,8 +41,6 @@ public class Game3x3 extends AppCompatActivity{
         }
 
 
-
-
         //Середины боковых граней
         c2 = summa - c1 - c3;
         c4 = summa - c1 - c7;
@@ -52,9 +50,15 @@ public class Game3x3 extends AppCompatActivity{
         String mes1 = c1 + "", mes2 = c2 + "", mes3 = c3 + "";
         String mes4 = c4 + "", mes5 = c5 + "", mes6 = c6 + "";
         String mes7 = c7 + "", mes8 = c8 + "", mes9 = c9 + "";
-        NUM1.setText(mes1);NUM2.setText(mes2);NUM3.setText(mes3);
-        NUM4.setText(mes4);NUM5.setText(mes5);NUM6.setText(mes6);
-        NUM7.setText(mes7);NUM8.setText(mes8);NUM9.setText(mes9);
+        NUM1.setText(mes1);
+        NUM2.setText(mes2);
+        NUM3.setText(mes3);
+        NUM4.setText(mes4);
+        NUM5.setText(mes5);
+        NUM6.setText(mes6);
+        NUM7.setText(mes7);
+        NUM8.setText(mes8);
+        NUM9.setText(mes9);
     }
 
     public void gen_game() {
@@ -170,7 +174,8 @@ public class Game3x3 extends AppCompatActivity{
         });
 
 
-}
+    }
+
     public void back3x3(View v) {
         Intent intent3 = new Intent(this, GameSelection.class);
         startActivity(intent3);
